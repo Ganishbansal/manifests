@@ -8,14 +8,14 @@ spec:
   selector:
     matchLabels:
       app: mysql
-  replicas: 3
+  replicas: 1
   template:
     metadata:
       labels:
         app: mysql
     spec:
       containers:
-      - image: 914379829654.dkr.ecr.us-east-1.amazonaws.com/my_sql:v0.2
+      - image: 914379829654.dkr.ecr.us-east-1.amazonaws.com/my_sql:v0.3
         name: sql
         env:
         - name: MYSQL_ROOT_PASSWORD

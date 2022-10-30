@@ -6,11 +6,11 @@ metadata:
   name: employees
 spec:
   containers:
-  - image: 914379829654.dkr.ecr.us-east-1.amazonaws.com/web_app:v0.2
+  - image: 914379829654.dkr.ecr.us-east-1.amazonaws.com/web_app:v0.3
     name: employees
     env:
     - name: DBHOST
-      value: 10.244.0.5
+      value: 10.244.0.7
     - name: DBPORT
       value: "3306"  
     - name: DBUSER
@@ -20,6 +20,6 @@ spec:
     - name: DBPWD
       value: pw
     - name: APP_COLOR
-      value: blue  
+      value: lime  
     ports:
     - containerPort: 8080
